@@ -11,7 +11,6 @@ import {
   apiVersion,
   dataset,
   projectId,
-  tokenId,
   secretKey,
 } from './sanity/env';
 import { schema } from './sanity/schema';
