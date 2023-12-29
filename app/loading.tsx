@@ -1,6 +1,6 @@
 export default function Loading() {
   return (
-    <div className='text-center grid place-items-center h-screen bg-[#FAFAFA]'>
+    <div className='text-center grid place-items-center h-screen bg-[#F2F7FB]'>
       <div role='status'>
         <svg
           aria-hidden='true'
