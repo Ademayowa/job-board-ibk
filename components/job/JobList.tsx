@@ -11,7 +11,7 @@ export default function JobList({ job }: Props) {
   return (
     <Link
       href={`/job/${job.slug}`}
-      className='rounded-lg shadow-lg bg-white p-7 cardAnimation'
+      className='rounded-lg shadow-md bg-white p-7 cardAnimation'
     >
       <div className='flex items-center'>
         <h3 className='flex flex-1 text-blueColor text-lg font-bold'>

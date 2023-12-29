@@ -39,7 +39,7 @@ export default async function JobDetails({ params }: Props) {
       <BaseLayout>
         <div className='py-10 pb-10'>
           <div className='mt-20 lg:mt-24 bg-white rounded-2xl drop-shadow-xl'>
-            <div className='px-8 py-10'>
+            <div className='lg:px-8 px-4 py-10'>
               <div>
                 <h2 className='text-blueColor text-lg md:text-2xl font-bold mt-2'>
                   {job.title}
