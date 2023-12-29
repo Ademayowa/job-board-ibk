@@ -38,7 +38,7 @@ export default function SearchForm() {
   }, [search]);
 
   return (
-    <div className='flex flex-1 items-center space-x-2'>
+    <div className='flex items-center space-x-2'>
       <HiOutlineLocationMarker className='ml-4 hidden h-5 w-5 text-[#4BBCEF] md:block' />
       <input
         value={search}

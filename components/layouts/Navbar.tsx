@@ -14,7 +14,7 @@ export default function Navbar() {
 
   return (
     <nav className='bg-[#0F4A7B] fixed top-0 z-10 w-full pt-3 lg:pt-0'>
-      <div className='max-w-7xl mx-auto flex items-center lg:h-[96px] py-4 justify-between flex-wrap md:px-20 px-5'>
+      <div className='max-w-6xl mx-auto flex items-center lg:h-[96px] py-4 justify-between flex-wrap md:px-16 px-5'>
         <div>
           <Link href='/' className='text-white font-bold text-xl'>
             Find Gigs

@@ -22,7 +22,7 @@ export default async function HomePage({ searchParams }: Props) {
     <div className='bg-[#F2F7FB]'>
       <Hero />
 
-      <div className='relative flex w-11/12 flex-col justify-between rounded-lg bg-white py-10 shadow-lg md:w-11/12 md:flex-row md:p-5 lg:w-8/12 -mt-10 max-w-3xl mx-auto'>
+      <div className='relative flex flex-col justify-between rounded-lg bg-white py-12 shadow-lg md:flex-row md:p-5 -mt-10 max-w-5xl mx-auto w-11/12'>
         <SearchForm />
 
         <div className='mx-2 flex flex-auto items-center md:mx-0 md:flex-none'>
