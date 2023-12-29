@@ -3,6 +3,8 @@ import JobList from '@/components/job/JobList';
 import BaseLayout from '@/components/layouts/BaseLayout';
 import { getJobs } from '@/sanity/lib/queries';
 
+export const revalidate = 10; // revalidate this page every 10 seconds
+
 export default async function AllJobsPage() {
   const jobs = await getJobs();
 

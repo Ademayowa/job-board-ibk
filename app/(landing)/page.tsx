@@ -1,4 +1,5 @@
 import SearchForm from '@/components/SearchForm';
+import Link from 'next/link';
 import SectionTitle from '@/components/SectionTitle';
 import Hero from '@/components/hero/Hero';
 import JobList from '@/components/job/JobList';
@@ -32,8 +33,11 @@ export default async function HomePage({ searchParams }: Props) {
       </div>
 
       <BaseLayout>
-        <div className='pt-24 lg:pt-40'>
+        <div className='flex justify-between pt-24 lg:pt-40'>
           <SectionTitle title='Latest Jobs' />
+          <Link href='/jobs' className='text-[#FF5555] hover:text-red-600'>
+            See all jobs
+          </Link>
         </div>
 
         <div className='grid grid-cols-1 lg:grid-cols-2 mt-2 gap-6 pb-20'>
