@@ -59,12 +59,14 @@ export default async function JobDetails({ params }: Props) {
 
               <div className='mt-5'>
                 <h3 className='font-bold my-3 text-grayColor'>Summary</h3>
-                <p className='max-w-4xl text-grayColor leading-8'>
+                <p className='max-w-4xl sm:text-sm md:text-base text-grayColor !leading-7'>
                   {job.description}
                 </p>
 
-                <div className='text-grayColor max-w-4xl'>
-                  <h3 className='font-bold my-3'>Responsibilities</h3>
+                <div className='max-w-4xl sm:text-sm md:text-base text-grayColor !leading-7'>
+                  <h3 className='font-bold !text-base my-3'>
+                    Responsibilities
+                  </h3>
                   <PortableText
                     value={job.body}
                     components={RichTextComponents}
