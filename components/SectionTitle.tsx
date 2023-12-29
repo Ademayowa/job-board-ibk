@@ -4,7 +4,7 @@ type Props = {
 
 export default function SectionTitle({ title }: Props) {
   return (
-    <div className='mt-24 lg:mt-40'>
+    <div>
       <h2 className='text-blueColor text-xl lg:text-3xl font-bold'>{title}</h2>
     </div>
   );

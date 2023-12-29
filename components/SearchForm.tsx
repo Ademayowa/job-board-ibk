@@ -44,7 +44,7 @@ export default function SearchForm() {
         value={search}
         onChange={(e) => setSearch(e.target.value)}
         type='text'
-        placeholder='Search for jobs'
+        placeholder='Search for jobs by title'
         className='mb-4 !mr-3 h-16 w-full rounded-md border border-slate-500 bg-transparent pl-5 leading-10 outline-none md:mb-0 md:h-auto md:border-none md:pl-0'
       />
     </div>

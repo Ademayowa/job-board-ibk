@@ -32,11 +32,15 @@ export default async function HomePage({ searchParams }: Props) {
       </div>
 
       <BaseLayout>
-        <SectionTitle title='Latest Jobs' />
+        <div className='pt-24 lg:pt-40'>
+          <SectionTitle title='Latest Jobs' />
+        </div>
 
-        <div className='grid grid-cols-1 lg:grid-cols-2 mt-2 gap-8 pb-20'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 mt-2 gap-6 pb-20'>
           {jobs?.length > 0 ? (
-            jobs.map((job: Job) => <JobList key={job._id} job={job} />)
+            jobs
+              .slice(0, 4)
+              .map((job: Job) => <JobList key={job._id} job={job} />)
           ) : (
             <p className='text-lg mt-3 text-grayColor'>Oops, No Jobs Found</p>
           )}

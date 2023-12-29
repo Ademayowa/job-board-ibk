@@ -1,11 +1,24 @@
+import SectionTitle from '@/components/SectionTitle';
+import JobList from '@/components/job/JobList';
 import BaseLayout from '@/components/layouts/BaseLayout';
+import { getJobs } from '@/sanity/lib/queries';
 
-type Props = {};
+export default async function AllJobsPage() {
+  const jobs = await getJobs();
 
-export default function AllJobsPage({}: Props) {
   return (
-    <BaseLayout>
-      <h1 className='text-center mt-40 text-lg'>Work in progress...</h1>
-    </BaseLayout>
+    <section className='bg-[#F2F7FB]'>
+      <BaseLayout>
+        <div className='pt-32 lg:pt-40'>
+          <SectionTitle title='All Jobs' />
+        </div>
+
+        <div className='mt-2 grid grid-cols-1 lg:grid-cols-2 gap-6 pb-20'>
+          {jobs.map((job) => (
+            <JobList key={job._id} job={job} />
+          ))}
+        </div>
+      </BaseLayout>
+    </section>
   );
 }
