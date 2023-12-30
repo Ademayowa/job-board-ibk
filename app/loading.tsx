@@ -18,7 +18,6 @@ export default function Loading() {
             fill='currentFill'
           />
         </svg>
-        <span className='text-xl'>Loading...</span>
       </div>
     </div>
   );
