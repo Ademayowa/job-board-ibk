@@ -7,7 +7,7 @@ import { Job } from '@/types';
 export async function getJobs(): Promise<Job[]> {
   return client.fetch(
     groq`
-    *[_type == "job"] | order(_createdAt desc) {
+    *[_type == "job"] | order(_updatedAt desc) {
       _id,
       title,
       "slug":slug.current,
