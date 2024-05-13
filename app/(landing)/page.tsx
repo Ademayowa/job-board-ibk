@@ -7,6 +7,8 @@ import BaseLayout from '@/components/layouts/BaseLayout';
 import { getJobs } from '@/sanity/schemas/actions';
 import { Job } from '@/types';
 
+export const dynamic = 'force-dynamic';
+
 type Props = {
   searchParams: { [key: string]: string | undefined };
 };
