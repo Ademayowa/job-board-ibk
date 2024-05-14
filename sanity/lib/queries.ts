@@ -15,6 +15,7 @@ export async function getJobs(): Promise<Job[]> {
       location,
       "mainImage": mainImage.asset->url, 
       _createdAt,
+      _updatedAt,
       description,
       body
     }
@@ -29,6 +30,7 @@ export async function getJob(slug: string): Promise<Job> {
     *[_type == "job" && slug.current == $slug][0] {
       _id,
       _createdAt,
+      _updatedAt,
       salary,
       location,
       title,
