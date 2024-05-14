@@ -10,6 +10,7 @@ export type Job = {
   location: string;
   mainImage: string;
   _createdAt: Date;
+  _updatedAt: Date;
   description: string;
   body: PortableTextBlock[];
 };
