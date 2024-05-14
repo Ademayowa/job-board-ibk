@@ -26,6 +26,7 @@ export const getJobs = async (params: GetJobsParams) => {
         location,
         "mainImage": mainImage.asset->url, 
         _createdAt,
+         _updatedAt,
         description,
         body
       }`
