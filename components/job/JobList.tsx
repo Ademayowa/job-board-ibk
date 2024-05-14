@@ -28,7 +28,7 @@ export default function JobList({ job }: Props) {
       <div className='mt-2'>
         <p className='text-grayColor '>
           Date Posted:{' '}
-          {new Date(job?._updateAt).toLocaleDateString('en-US', {
+          {new Date(job?._updatedAt).toLocaleDateString('en-US', {
             day: 'numeric',
             month: 'long',
             year: 'numeric',
