@@ -37,9 +37,6 @@ export default async function HomePage({ searchParams }: Props) {
       <BaseLayout>
         <div className='flex justify-between pt-24 lg:pt-40'>
           <SectionTitle title='Latest Jobs' />
-          <Link href='/jobs' className='text-[#FF5555] hover:text-red-600'>
-            See all jobs
-          </Link>
         </div>
 
         <div className='grid grid-cols-1 lg:grid-cols-2 mt-2 gap-6 pb-20'>
